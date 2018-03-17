@@ -20,9 +20,13 @@ HyperText Markup Language
 ---
 
 HTML - The skeleton of a webpage
-![]()
 
-^ have image next to code that gives it shape
+^ How many of you know wikipedia?
+
+---
+HTML - The skeleton of a webpage
+
+![inline](wiki-no-css.png)
 
 ---
 # CSS
@@ -30,11 +34,17 @@ HTML - The skeleton of a webpage
 Cascading Style Sheets
 
 ---
+CSS - The skin and shape of a webpage
 
-The skin and shape of a webpage
-![]()
+---
+CSS - The skin and shape of a webpage
 
-^ have image next to code that has color, size, etc
+![inline](Wikipedia.png)
+
+^ Look more familiar now?
+
+---
+# Let's start with HTML
 
 ---
 # HTML elements
@@ -53,8 +63,10 @@ They consist of tags and content
 ```html
 <tag>content</tag>
 ```
+^ Also make sure you are using those '<' + '>'
 
-Notice that a complete tag is in **2** pieces - an _opening_ and _closing_ tag
+Notice that a complete tag is in **2** pieces:
+an _opening_ and _closing_ tag
 
 Tags _almost_ always come in pairs
 
@@ -65,7 +77,7 @@ If you know python, you know spaces and newlines matter
 
 HTML and CSS **don't care** about whitespace
 
-But its _good practice_ to have indents for readability
+But its _good practice_ to use indentation for readability
 
 ---
 # Code it - <html>
@@ -74,7 +86,7 @@ But its _good practice_ to have indents for readability
 
 Every file should have these:
 
-* You should _start_ every HTML document with
+* _Start_ every HTML document with
 
 ```html
 <html>
@@ -95,7 +107,8 @@ Every file should have these:
 ---
 # Important Note about placing tags
 
-Tags can nest, so be sure to close them in the right order
+Tags can nest
+Be sure to close them in the right order!
 
 ```html
 <first_tag>
@@ -114,7 +127,7 @@ Tags can nest, so be sure to close them in the right order
 </html>
 ```
 
-`<body>` will house all of our _viewable_ webpage content
+`<body>` will contain all of our _viewable_ webpage content
 
 ---
 # Code it - <p>
@@ -181,7 +194,7 @@ Notice it shows up _after_ it in the webpage
 </html>
 ```
 
-Notice that the text inside inside, is visible once again
+Notice that the text inside is visible again
 
 ---
 # Code it - <h1>
@@ -196,7 +209,7 @@ Notice that the text inside inside, is visible once again
 </html>
 ```
 
-Notice this header tag, had the number _1_ in it...
+Notice this header tag, had the number _1_...
 
 ---
 # Code it - <h2>
@@ -212,7 +225,9 @@ Notice this header tag, had the number _1_ in it...
 </html>
 ```
 
-That's because there are more, that gradually decrease in size and importance
+There are more
+
+Each gradually decreases in size
 
 ---
 # All the <h_>'s
@@ -259,11 +274,13 @@ What about links?
 ---
 # HTML Attributes
 
-**Attributes** are modifiers on a particular html tag
+**Attributes** are modifiers on an html tag
 
-Some attributes are special and only exist on that tag (like `href` on `<a>`)
+* Some attributes are only on some tags 
+(like `href` on `<a>`)
 
-Others will be on many tags (like `style` we'll see later)
+* Others will be on many tags 
+(like `class` we'll see later)
 
 
 ---
@@ -341,7 +358,7 @@ Showing off absolute vs relative paths will be hard...
 
 Each `<li>` (list item) is part of the main `<ul>` (_unordered_ list)
 
-They are grouped together, and shown as a bulleted list
+^They are grouped together, and shown as a bulleted list
 
 ---
 # Code it - <ol>, <li>
@@ -361,7 +378,9 @@ Each `<li>` (list item) is part of the main `<ol>` (_ordered_ list)
 ---
 # Code it - nesting lists
 
-You can nest lists, just make sure to close things properly
+You can also nest lists
+
+Just be sure close them properly!
 
 ---
 # Code it - nesting lists
@@ -407,7 +426,7 @@ Bold and italic texts
 ```
 
 ---
-# Code it - <strong>, <em>
+<!--# Code it - <strong>, <em>
 
 Strong and emphasized text, similar to bold and italic
 
@@ -416,14 +435,14 @@ Strong and emphasized text, similar to bold and italic
 	And <em>emphasis</em> too.</p>
 ```
 
----
+--- -->
 # Images
 
 Are a bit special:
 
 * No closing tag
 * No inner content
-* Requires a `src` attribute
+* Require a `src` attribute
 * `src` is a link, like with `href`
 
 ---
@@ -446,9 +465,10 @@ You can add a link to your image by nesting in an \<a>
 ---
 # Code it - comments
 
-It can be really useful to leave notes in your code
+You might want to leave notes in your code
 
-These are hidden on the webpage, and just for you developers
+These are hidden on the webpage, 
+and just seen in the code
 
 ```html
 <!-- comments galore here -->
@@ -464,7 +484,7 @@ These are hidden on the webpage, and just for you developers
 ---
 # The head
 
-Remember I said `<body>` was full of the _visible_ bits?
+Remember `<body>` was full of the _visible_ bits?
 
 Well, `<head>` has lots of _invisible_ bits
 
@@ -486,7 +506,7 @@ Well, `<head>` has lots of _invisible_ bits
 Head can contain things like:
 
 * page title (seen in the browser tab)
-* language information (spanish, german, english)
+* language (spanish, german, english, ...)
 * javascript things
 * css things
 * search/social media sharing things
@@ -534,7 +554,7 @@ p {
 ```
 Notice the syntax
 
-* '**{**' and '**}**' are used to surround the _properties_
+* '**{**' and '**}**' surround the _properties_
 * each _property name_ is followed by a '**:**'
 * each _property value_ is followed by a '**;**'
 
@@ -548,7 +568,7 @@ p {
 
 **p** is the _selector_
 
-It tells the browser which element the rule is touching
+Says which element the rule is touching
 
 Here, all `<p>` tags would be affected
 
@@ -571,9 +591,9 @@ p {
 }
 ```
 
-This is how and what part of the element that will be affected
+The how and what part of the element
 
-We know the _color_ will be affected by appearing _green_
+The _color_ will be affected by appearing _green_
 
 ---
 # CSS Rules
@@ -645,32 +665,33 @@ Now let's add that CSS rule from earlier
 # What if I only want **one** green <p>?
 
 ---
-# More complex selectors - classes
+# More selectors - classes
 
-`class` is an attribute you can add to any html element
+`class` is an attribute for any html element
 
-It allows you to group elements in different ways
+You can group elements in different ways
 
 ---
-# More complex selectors - classes
+# More selectors - classes
 
 ```html
-<p class="green second">Another paragraph!</p>
+<p class="green">Another paragraph!</p>
 ```
 
-You can add multiple classes to an element, as long as they are separated by a space
-
 ---
-# More complex selectors - classes
+# More selectors - classes
 ```css
 p.green {
 	color: green;
 }
 ```	
+
+`.green` says the `<p>` will have a `green` class
+
 ^Reload page with green text only on that paragraph now
 
 ---
-# More complex selectors - classes
+# More selectors - classes
 
 ```html
 <p class="green bordered">Another paragraph!
@@ -680,10 +701,12 @@ p.green {
 
 ```
 
-You can add multiple classes to an element, as long as they are separated by a space
+You can add multiple classes to an element
+
+Just separate them with a space
 
 ---
-# More complex selectors - classes
+# More selectors - classes
 ```css
 p.green, .special {
 	color: green;
@@ -692,7 +715,9 @@ p.green, .special {
 	border: 1px solid black;
 }
 ```	
-You add multiple class selectors to a rule, even leaving off an element
+You add multiple class selectors to a rule
+
+Even leaving off an element
 
 ^Reload page to show off
 
@@ -707,10 +732,6 @@ You add multiple class selectors to a rule, even leaving off an element
 * descendants ( `p i`)
 
 ---
-
-
----
-
 # Further Resources
 
 [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -720,3 +741,5 @@ You add multiple class selectors to a rule, even leaving off an element
 [W3Schools CSS](https://www.w3schools.com/css/default.asp)
 
 [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+
+[Boostrap](https://getbootstrap.com/)
