@@ -13,6 +13,17 @@ slidenumbers: true
 [.footer: ]
 
 ---
+# Me
+
+Engineer in - Python, HTML, CSS, Javascript, Django, Flask...
+
+Teacher for - Girls Who Code
+
+Mentor for - 3 cohorts of Hackbright
+
+Speaker at - NorthBayPython, DjangoGirls 
+
+---
 # HTML
 
 HyperText Markup Language
@@ -42,6 +53,11 @@ CSS - The skin and shape of a webpage
 ![inline](Wikipedia.png)
 
 ^ Look more familiar now?
+
+---
+# HTML + CSS - Page Layout
+
+![inline](wiki-no-css.png) ![inline](Wikipedia.png)
 
 ---
 # Let's start with HTML
@@ -743,3 +759,13 @@ Even leaving off an element
 [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
 [Boostrap](https://getbootstrap.com/)
+
+---
+# Gratuitous Plug
+
+### Kelsey Karin Hawley
+
+* Github [https://github.com/khawley](https://github.com/khawley)
+* These slides
+  [https://github.com/khawley/my-talks](https://github.com/khawley/my-talks)
+* Honor [http://joinhonor.com](http://joinhonor.com)
